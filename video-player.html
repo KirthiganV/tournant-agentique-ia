@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Tournant Agentique de l'IA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .info {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .info h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .info p {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.2em;
+            display: none;
+        }
+
+        video:not([src]) + .loading {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <div class="info">
+            <h1>🤖 Le Tournant Agentique de l'IA</h1>
+            <p>Exploration de l'évolution de l'IA générative - Octobre 2025</p>
+        </div>
+        <video controls preload="metadata" poster="https://via.placeholder.com/1280x720/1a1a1a/ffffff?text=Le+Tournant+Agentique+de+l%27IA">
+            <source src="https://github.com/KirthiganV/tournant-agentique-ia/releases/download/v1.0/Le_Tournant_Agentique_de_l_IA.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+        </video>
+        <div class="loading">Chargement de la vidéo...</div>
+    </div>
+</body>
+</html>
